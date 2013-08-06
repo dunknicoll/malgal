@@ -1,0 +1,20 @@
+---
+layout: core
+---
+
+<div class="page-header">
+  <h1 class="well">{{ page.title }} <small>{{ site.tagline }}</small></h1>
+</div>
+
+
+<ul class="thumbnails">
+{% for pic in page.pictures %}
+ <li class="span3">
+  <div class="thumbnail">
+   <a href="#"><img src="{{ pic.url }}" alt="image" /></a>
+   <h5>{{ pic.label }}</h5>
+   <p>{{ pic.caption }}</p>
+  </div>
+ </li>
+{% endfor %}
+</ul>

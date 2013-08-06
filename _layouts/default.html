@@ -23,7 +23,7 @@
                 {% for p in site.pages %}
                   {% if p.weight == weight %}
                     {% if p.url != "/index.html" %}
-                      <a class="extra{% if p.url == page.url %} active{% endif %}" href="{{ p.url }}">
+                      <a class="extra{% if p.url == page.url %} active{% endif %}" href="{{ site.baseurl }}{{ p.url }}">
                         {{ p.title }}
                       </a>
                     {% endif %}
